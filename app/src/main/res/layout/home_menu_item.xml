@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/all"
     android:layout_width="match_parent"
     android:layout_height="170dp">
 
@@ -51,12 +52,25 @@
         android:id="@+id/icon_menu"
         android:layout_width="100px"
         android:layout_height="100px"
-        android:scaleType="fitXY"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/descrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/icon_menu"
+        app:layout_constraintTop_toBottomOf="@+id/menu_name" />
 </android.support.constraint.ConstraintLayout>

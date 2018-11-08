@@ -9,17 +9,37 @@ public class Menu_item {
     private int type;
     private int back_img;
     private int icon;
+    private String descrip;
+    private String direction;
 
 
-    public Menu_item(String itemName, int type, int back_img,int icon) {
+    public Menu_item(String itemName, int type, int back_img,int icon,String descrip,String direction) {
         this.itemName = itemName;
         this.type = type;
         this.back_img = back_img;
         this.icon = icon;
+        this.descrip = descrip;
+        this.direction = direction;
     }
 
     public String getItemName() {
         return itemName;
+    }
+
+    public String getDescrip() {
+        return descrip;
+    }
+
+    public String getDirection() {
+        return direction;
+    }
+
+    public void setDirection(String direction) {
+        this.direction = direction;
+    }
+
+    public void setDescrip(String descrip) {
+        this.descrip = descrip;
     }
 
     public void setItemName(String itemName) {

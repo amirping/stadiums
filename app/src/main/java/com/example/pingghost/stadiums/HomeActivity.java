@@ -27,10 +27,10 @@ public class HomeActivity extends AppCompatActivity {
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         List<Menu_item> menu_list = new ArrayList<>();
-        menu_list.add(new Menu_item("Search Stadiums",1,R.drawable.search_stadiums,R.drawable.stadium));
-        menu_list.add(new Menu_item("User Contract",1,R.drawable.contract,R.drawable.writeletter));
-        menu_list.add(new Menu_item("Access Profile",1,R.drawable.profile,R.drawable.user));
-        menu_list.add(new Menu_item("Log-out",1,R.drawable.exit,R.drawable.logout));
+        menu_list.add(new Menu_item("Search Stadiums",1,R.drawable.search_stadiums,R.drawable.stadium,"Search for stadiums with advanced search tool","search"));
+        menu_list.add(new Menu_item("User Contract",1,R.drawable.contract,R.drawable.writeletter,"View all open contract with stadiums Managers","contract"));
+        menu_list.add(new Menu_item("Access Profile",1,R.drawable.profile,R.drawable.user,"Access To profile to edit and change information","profile"));
+        menu_list.add(new Menu_item("Log-out",1,R.drawable.exit,R.drawable.logout,"","logout"));
         MenuAdapter adapter = new MenuAdapter(this,menu_list);
         menu.setAdapter(adapter);
         menu.setLayoutManager(new LinearLayoutManager(this));
