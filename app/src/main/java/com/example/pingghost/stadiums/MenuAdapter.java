@@ -59,6 +59,10 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MyViewHolder> 
                         mContext.startActivity(i);
                         
                     }break;
+                    case "contract":{
+                        Intent i = new Intent(mContext, ContractActivity.class);
+                        mContext.startActivity(i);
+                    }break;
                 }
             }
         });

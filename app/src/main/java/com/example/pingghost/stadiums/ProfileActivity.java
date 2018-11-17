@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -152,6 +151,9 @@ public class ProfileActivity extends AppCompatActivity {
          * The fragment argument representing the section number for this
          * fragment.
          */
+        private Button saveEmail,saveChanges;
+        private EditText newEmail,old_passwd,new_passwd;
+        private Switch enableEdit;
         private static final String ARG_SECTION_NUMBER = "section_number";
 
         public PlaceholderFragment() {
@@ -173,8 +175,31 @@ public class ProfileActivity extends AppCompatActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_profile, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+            saveEmail = rootView.findViewById(R.id.email_change);
+            saveChanges = rootView.findViewById(R.id.saveSecurity);
+            newEmail = rootView.findViewById(R.id.new_email);
+            old_passwd = rootView.findViewById(R.id.old_pass);
+            enableEdit = rootView.findViewById(R.id.enableEditSecurity);
+            saveChanges.setEnabled(false);
+            saveEmail.setEnabled(false);
+            newEmail.setEnabled(false);
+            old_passwd.setEnabled(false);
+            enableEdit.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                    if (b){
+                        saveChanges.setEnabled(true);
+                        saveEmail.setEnabled(true);
+                        newEmail.setEnabled(true);
+                        old_passwd.setEnabled(true);
+                    }else{
+                        saveChanges.setEnabled(false);
+                        saveEmail.setEnabled(false);
+                        newEmail.setEnabled(false);
+                        old_passwd.setEnabled(false);
+                    }
+                }
+            });
             return rootView;
         }
     }
@@ -213,7 +238,7 @@ public class ProfileActivity extends AppCompatActivity {
             b_date = rootView.findViewById(R.id.b_date);
             location = rootView.findViewById(R.id.location);
             phone = rootView.findViewById(R.id.phone);
-            enable_edit = rootView.findViewById(R.id.enableEdit);
+            enable_edit = rootView.findViewById(R.id.enableEditSecurity);
             //----- readonly at start
             save.setEnabled(false);
             last_name.setEnabled(false);

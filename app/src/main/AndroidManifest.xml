@@ -22,6 +22,10 @@
         <activity
             android:name=".ProfileActivity"
             android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ContractActivity"
+            android:label="@string/title_activity_contract"
             android:theme="@style/AppTheme"></activity>
     </application>
 
