@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="125dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/s_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Stade 3 Sanheja" />
+
+                <TextView
+                    android:id="@+id/s_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Manouba , tunis" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/s_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_weight="0"
+                    android:gravity="center_horizontal|center"
+                    android:text="5/10" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/s_open"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="OPEN" />
+
+            <TextView
+                android:id="@+id/s_open_time"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="8AM - 01AM" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

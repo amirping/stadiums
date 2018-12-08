@@ -13,6 +13,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Adapter;
 
+import com.mapbox.mapboxsdk.Mapbox;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +23,7 @@ public class HomeActivity extends AppCompatActivity {
     private RecyclerView menu ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Mapbox.getInstance(getApplicationContext(), getString(R.string.mapbox_access_token));
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         menu = findViewById(R.id.menu);

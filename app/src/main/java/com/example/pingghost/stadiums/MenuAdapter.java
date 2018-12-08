@@ -46,6 +46,8 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MyViewHolder> 
                 switch (mList.get(position).getDirection()){
                     case "search":{
                         Toast.makeText(mContext, "Still in dev MODE", Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(mContext, SearchActivity.class);
+                        mContext.startActivity(i);
                     }break;
                     case  "profile":{
                         Intent i = new Intent(mContext, ProfileActivity.class);
