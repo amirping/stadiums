@@ -1,19 +1,16 @@
 package com.example.pingghost.stadiums;
 
-import android.accounts.Account;
-import android.accounts.AccountManager;
-import android.accounts.AccountManagerCallback;
-import android.accounts.AccountManagerFuture;
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Adapter;
 
-import com.mapbox.mapboxsdk.Mapbox;
+//import com.mapbox.mapboxsdk.Mapbox;
+
+import com.example.pingghost.stadiums.adapter.MenuAdapter;
+import com.example.pingghost.stadiums.viewItem.Menu_item;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +20,7 @@ public class HomeActivity extends AppCompatActivity {
     private RecyclerView menu ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Mapbox.getInstance(getApplicationContext(), getString(R.string.mapbox_access_token));
+        //Mapbox.getInstance(getApplicationContext(), getString(R.string.mapbox_access_token));
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         menu = findViewById(R.id.menu);

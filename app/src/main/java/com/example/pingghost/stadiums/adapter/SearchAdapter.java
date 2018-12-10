@@ -1,4 +1,4 @@
-package com.example.pingghost.stadiums;
+package com.example.pingghost.stadiums.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -6,6 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.pingghost.stadiums.R;
+import com.example.pingghost.stadiums.viewItem.search_item;
 
 import java.util.List;
 
@@ -23,7 +26,7 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.MyViewHold
     @Override
     public SearchAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(mContext);
-        View view = inflater.inflate(R.layout.contract_item,parent,false);
+        View view = inflater.inflate(R.layout.stadium_search_item,parent,false);
         return new SearchAdapter.MyViewHolder(view);
     }
 

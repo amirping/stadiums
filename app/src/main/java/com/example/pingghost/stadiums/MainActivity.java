@@ -28,16 +28,18 @@ public class MainActivity extends AppCompatActivity {
         token = prefs.getString("token_app_acc","00_no_token_found_00");
         Toast.makeText(this, token, Toast.LENGTH_SHORT).show();
         if(isexiste && !token.equals("00_no_token_found_00")){
+            Intent i = new Intent(this, HomeActivity.class);
             Log.d(TAG, "TOKEN IS :"+token);
             // check if still up
 
             // if yes go to home
 
+            startActivity(i);
             // dev mode
-            if (token.equals("isDevMode")){
-                Intent i = new Intent(this, HomeActivity.class);
+            /*if (token.equals("isDevMode")){
+
                 startActivity(i);
-            }
+            }*/
         }
         else{
             // go to login

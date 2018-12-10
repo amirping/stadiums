@@ -1,4 +1,4 @@
-package com.example.pingghost.stadiums;
+package com.example.pingghost.stadiums.viewItem;
 
 import java.util.Date;
 

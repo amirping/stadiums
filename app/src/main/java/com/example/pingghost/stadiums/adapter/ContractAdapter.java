@@ -1,13 +1,14 @@
-package com.example.pingghost.stadiums;
+package com.example.pingghost.stadiums.adapter;
 
 import android.content.Context;
-import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.pingghost.stadiums.model.Contract;
+import com.example.pingghost.stadiums.R;
 
 import java.util.List;
 

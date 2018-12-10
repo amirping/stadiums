@@ -36,13 +36,13 @@
                 android:id="@+id/tabItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Search Fast" />
+                android:text="On MAP SARCH" />
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tabItem2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Search on map" />
+                android:text="FAST SEARCH" />
 
         </android.support.design.widget.TabLayout>
     </android.support.design.widget.AppBarLayout>

@@ -1,4 +1,4 @@
-package com.example.pingghost.stadiums;
+package com.example.pingghost.stadiums.viewItem;
 
 /**
  * Created by pingghost on 07/11/18.

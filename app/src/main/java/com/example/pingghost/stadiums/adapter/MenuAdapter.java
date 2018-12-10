@@ -1,4 +1,4 @@
-package com.example.pingghost.stadiums;
+package com.example.pingghost.stadiums.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +11,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.pingghost.stadiums.ContractActivity;
+import com.example.pingghost.stadiums.MainActivity;
+import com.example.pingghost.stadiums.viewItem.Menu_item;
+import com.example.pingghost.stadiums.ProfileActivity;
+import com.example.pingghost.stadiums.R;
+import com.example.pingghost.stadiums.SearchActivity;
 
 import java.util.List;
 
